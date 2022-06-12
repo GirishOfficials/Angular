@@ -1,0 +1,32 @@
+<h2>In this Application there are two services and 2 childs</h2>
+<h2>1) service : number  for child1</h2>
+<br>
+<h2>Child1 calls number service</h2>
+<br>
+<h2>ChkPrime(2)</h2>
+<h2>Return : </h2>
+
+
+<div *ngIf="bRet1; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h2>Not Prime</h2>
+</ng-template>
+
+<ng-template #elseblock>
+  <h2>Prime</h2>
+</ng-template>
+
+<br>
+<h2>ChkPrime(6)</h2>
+<h2>Return : </h2>
+
+<div *ngIf="bRet2; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h2>Not Prime</h2>
+</ng-template>
+
+<ng-template #elseblock>
+  <h2>Prime</h2>
+</ng-template>

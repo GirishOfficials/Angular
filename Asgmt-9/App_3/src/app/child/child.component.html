@@ -1,0 +1,47 @@
+<h2>In this Application there are two services and 2 childs</h2>
+<h2>1) service : number</h2>
+<h2>Check Prime or not</h2>
+<br>
+<h2>ChkPrime(53)</h2>
+<h2>Return : </h2>
+
+
+<div *ngIf="bRet1; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h2>Not Prime</h2>
+</ng-template>
+
+<ng-template #elseblock>
+  <h2>Prime</h2>
+</ng-template>
+
+<br>
+<h2>ChkPrime(100)</h2>
+<h2>Return : </h2>
+
+<div *ngIf="bRet2; then ifblock; else elseblock"></div> 
+
+<ng-template #ifblock>
+  <h2>Not-Prime</h2>
+</ng-template>
+
+<ng-template #elseblock>
+  <h2>Prime</h2>
+</ng-template>
+
+
+
+<h2>--------------------------------------</h2>
+<h2>2) service : String</h2>
+
+<h2>Count of Capital</h2>
+<br>
+
+<h2>CountCaptital(MarveLLouS) </h2>
+<h2>Return : {{Count1}}</h2>
+
+<br>
+
+<h2>CountCaptital(INFOSYSTEMS) </h2>
+<h2>Return : {{Count2}}</h2>

@@ -1,0 +1,24 @@
+<!-- // Communication of ts and html -->
+<!-- <h1>
+  Inside App Component
+</h1>
+<h1>
+  Data from TS to HTMLS : {{str}}
+</h1> -->
+
+<!-- #Mydata is the template refererance variable -->
+<!-- <input #Mydata type="text"> -->
+
+<!-- data will send to method "Send" -->
+<!-- <button (click) = "Send(Mydata.value)"> Send Data </button>
+<h2>Data is : {{value}}</h2> -->
+
+
+
+<!-- Assignment 8 (3) -->
+
+<h1> Enter string : </h1>
+<!-- [()] That synatx is banana in box -->
+<!-- to work ng model we have to import FormsModule in app.module.ts -->
+<input [(ngModel)] = "Name" type="text">
+<h1>length of string is : {{Name.length}}</h1>

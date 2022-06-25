@@ -1,0 +1,48 @@
+<div style="color: red; text-align: center;">
+  <h1>Application 12</h1>
+</div>
+
+<br><br>
+
+
+<div style="color : rgb(69, 164, 69)">
+
+  <h1>Reverse string  pipe</h1>
+
+  <input #myData type="text" >
+  <button (click) = "getName(myData.value)">Reverse String</button>
+
+  <h2>String is : {{str}}</h2>
+  <h2>Reverse String is : {{str | myRev}}</h2> 
+
+</div>
+
+
+<br><br>
+
+<div style="color : rgb(57, 117, 200)">
+
+  <h1>Addition & Multiplication pipe</h1>
+
+
+  <h2>Addition using pipe is : {{7 | myadd : 3}}</h2>
+  <h2>Multiplication using pipe is : {{8 | mymult : 3}}</h2>
+
+</div>
+
+
+<br><br>
+
+<div style="color : rgb(148, 80, 152)">
+
+  <h1>Even / Prime / Perfect</h1>
+
+  <h2>Number is : {{No}}</h2>
+  <h2>{{No|marvellouschk:'Even'}}</h2>
+  <h2>{{No|marvellouschk:'Prime'}}</h2>
+  <h2>{{No|marvellouschk:'Perfect'}}</h2>
+
+</div>
+
+
+

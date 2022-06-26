@@ -1,0 +1,4 @@
+/* Overwrite bootstrap property */
+.alert-secondary {
+    background-color: #d589b2;
+}

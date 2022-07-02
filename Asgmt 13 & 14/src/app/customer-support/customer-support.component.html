@@ -1,0 +1,126 @@
+<header>
+  <div class="title-container">
+
+    <div class="title-child Contact-our">
+      <h1 style="color : purple; text-align:center;">Contact Our</h1>
+      <h1>Customer Support Center</h1>
+    </div>
+
+    <div class="title-child logo">
+      <img class="img-fluid"
+        src="https://images.jdmagicbox.com/quickquotes/images_main/hp-14df-intel-core-i3-8130u-4gb-128gb-ssd-14-full-hd-1080p-wled-laptop-124144363-ju3w7.jpg"
+        alt="Laptop-img" />
+    </div>
+
+  </div>
+
+  <div class="contact-info">
+    <h3 style="text-align: center;">Contact Information</h3>
+    <h4 style="text-align: center;">Please fill our contact information below</h4>
+  </div>
+
+</header>
+
+
+
+
+
+<div class="container-fluid">
+
+  <!--Add FormGroup woth our model-->
+
+  <form [formGroup]="MarvellousForm">
+
+
+    <!-- Name fields -->
+    <div class="form-group">
+
+      <div class="name-container">
+
+        <div class="name-child first-name">
+          <label>Name
+            <span class="required-asterisk">*</span>
+          </label>
+          <!--Use class binding for validation-->
+          <input [class.is-invalid]="MarvellousForm.get('firstName')?.invalid && MarvellousForm.get('firstName')?.touched"
+            type="text" class="form-control" formControlName="firstName" placeholder="First-Name">
+          <small [class.d-none]="MarvellousForm.get('firstName')?.valid || MarvellousForm.get('firstName')?.untouched"
+            class="text-danger">First name </small>
+        </div>
+
+        <div class="name-child last-name">
+          <label></label>
+          <!--Use class binding for validation-->
+          <input [class.is-invalid]="MarvellousForm.get('lastName')?.invalid && MarvellousForm.get('lastName')?.touched"
+            type="text" class="form-control" formControlName="lastName" placeholder="Last Name">
+          <small [class.d-none]="MarvellousForm.get('lastName')?.valid || MarvellousForm.get('lastName')?.untouched"
+            class="text-danger">Last name</small>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="form-group">
+      <label>Phone </label>
+      <input [class.is-invalid]="MarvellousForm.get('Phone')?.invalid && MarvellousForm.get('phone')?.touched"
+        type="phone" class="form-control" formControlName="phone">
+      <small [class.d-none]="MarvellousForm.get('phone')?.valid || MarvellousForm.get('phone')?.untouched"
+        class="text-danger">Phone is required</small>
+    </div>
+
+    <div class="form-group">
+      <label>Email </label>
+      <input [class.is-invalid]="MarvellousForm.get('email')?.invalid && MarvellousForm.get('email')?.touched"
+        type="email" class="form-control" formControlName="email">
+      <small [class.d-none]="MarvellousForm.get('email')?.valid || MarvellousForm.get('email')?.untouched"
+        class="text-danger">Email is required</small>
+    </div>
+    
+    <div class="form-group">
+      <label>city </label>
+      <input [class.is-invalid]="MarvellousForm.get('city')?.invalid && MarvellousForm.get('city')?.touched"
+        type="city" class="form-control" formControlName="city">
+      <small [class.d-none]="MarvellousForm.get('city')?.valid || MarvellousForm.get('city')?.untouched"
+        class="text-danger">City is required</small>
+    </div>
+
+    <br>  
+    <div class="form-group">
+      <label>State </label>
+      <br>
+      <select class="browser-default custom-select" fromControlName = "state">
+        <option selected>Open this select menu</option>
+        <option value="Maharashtra">Maharashtra</option>
+        <option value="Gujrat">Gujrat</option>
+        <option value="UtterPradesh">UtterPradesh</option>
+      </select>
+    </div>
+    <br>
+
+
+    
+    <div class="form-group">
+      <label>ZIP Code </label>
+      <input [class.is-invalid]="MarvellousForm.get('zipcode')?.invalid && MarvellousForm.get('zipcode')?.touched"
+        type="zipcode" class="form-control" formControlName="zipcode">
+      <small [class.d-none]="MarvellousForm.get('zipcode')?.valid || MarvellousForm.get('zipcode')?.untouched"
+        class="text-danger">ZIP code is required</small>
+    </div>
+
+    <div class="form-group">
+      <label>Comments </label>
+      <input [class.is-invalid]="MarvellousForm.get('comment')?.invalid && MarvellousForm.get('comment')?.touched"
+        type="comment" class="form-control" formControlName="comment">
+      <small [class.d-none]="MarvellousForm.get('comment')?.valid || MarvellousForm.get('comment')?.untouched"
+        class="text-danger">Comment is required (minimum 30)</small>
+    </div>
+    <br><br>
+
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+
+  </form>
+
+  <!-- {{MarvellousForm.value | json}} -->
+</div>

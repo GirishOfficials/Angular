@@ -1,0 +1,50 @@
+/* 2 Div arrenge side by side by using flex */
+.title-container {
+    display: flex;
+}
+
+.title-child {
+    flex: 1;
+    border: 2px;
+    margin-left: 217px;
+    margin-top: 35px;
+    
+}  
+
+.title-child:first-child {
+    margin-right: 20px;
+} 
+
+.img-fluid {
+    max-width: 220px;
+    height: auto;
+  }
+
+.contact-info
+{
+    margin-top: 50px;
+}
+
+
+/* Property for first name and last name side by side */
+.name-container {
+    display: flex;
+}
+
+.name-child {
+    flex: 1;
+    border: 2px;
+    margin-left: 2px;
+    margin-top: 35px;
+    margin-right: 429px;
+}  
+
+.name-child:first-child {
+    margin-right: 20px;
+} 
+
+/* asterisk (*) red color */
+.required-asterisk
+{
+    color : red;
+}
